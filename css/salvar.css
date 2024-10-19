@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.conteudo{
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.titulo{
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    margin: 10px 0px;
+}
+
+.row{
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    margin: 15px 0px;
+    font-weight: 500;
+}
+
+.col{
+    width: 100%;
+    background-color: rgb(44, 126, 44);
+    border-radius: 5px;
+    color: white;
+}
+
+.exc {
+    width:150px;
+    height: 100px;
+    background-color: rgba(209, 41, 41, 0.593);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.25s;
+    border: solid 1px;
+    font-size: 25px;
+}
+
+/*Formulário*/
+
+input[type="text"], input[type="url"],input[type="file"]
+{
+    width:100% ;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 3px;
+    font-size: 25px;
+    height:50px;
+}
+
+input[type="submit"], [type="reset"]{
+    width:150px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.25s;
+    border: solid 1px;
+    font-size: 25px;
+}
+
+input[type="submit"]:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+label{
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Final do Formulário*/
+
+/*Tabela*/
+table{
+    border: 1px solid #777;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    background-color: rgb(19, 83, 5);
+    font-weight: bold;
+    color: white;
+    height: 50px;
+}
+
+td{
+    border: 1px solid;
+    height: 35px;
+    padding: 0 5px;
+}
+/*Final Tabela*/
+
+/*Menu*/
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    height: auto;
+    background-color: lightgreen;
+    transition: 0.20s;
+    background-image: url(../img/verde.jpg);
+
+}
+
+.menu li{
+    padding: 30px 5px;
+}
+
+.menu ul li :hover{
+    background-color: rgb(56, 97, 56);
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    transition: 0.20s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu a:hover{
+    color: black;
+    background-color: rgb(95, 158, 95);
+}
+/*Final Menu*/
+
+/*Cards*/
+  
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .card-button:hover {
+    background-color: #0056b3;
+  }
