@@ -15,6 +15,6 @@
         $totalRegistros = $dadosSelecionados->rowCount(); //retorna o total de registros selecionados
 
     } catch (\PDOException $e) {
-        echo("Erro ao11 se conectar com o banco. ".$e);
+        echo("Erro ao se conectar com o banco. ".$e);
         exit();
     }

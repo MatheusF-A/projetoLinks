@@ -67,6 +67,11 @@ input[type="submit"], [type="reset"]{
     font-size: 25px;
 }
 
+.btnExcluir{
+    background-color: lightcoral;
+    color: black;
+}
+
 input[type="submit"]:hover{
     background-color: lightgreen;
     cursor: pointer;

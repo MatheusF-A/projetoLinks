@@ -41,9 +41,8 @@
                     ?></p>
                     <div class=></div>
                     <a href="<?= $linha['link']; ?>" class="btnAcessar">Acessar</a>
-                    <a href="./excluir.php" class="btnExcluir">Excluir</a>
-                    <a href="./atualizar.php" class="btnAtualizar">Atualizar</a>
-
+                    <a href="./excluir.php?id=<?= $linha['idURL'];?>" class="btnExcluir">Excluir</a>
+                    <a href="./atualizar.php?id=<?= $linha['idURL'];?>" class="btnAtualizar">Atualizar</a>
                 </div>
             </div>
             <?php } ?>

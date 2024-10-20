@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXCLUIR LINK</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/salvar.css">
 </head>
 <body>
 
@@ -49,7 +49,7 @@
 
         <div>
             <input type="reset" value="Voltar" href="./visualizar.php">
-            <input type="submit" value="Excluir" style="background-color: red; color: white;">
+            <input type="submit" value="Excluir" >
         </div>
         </form>
     </div>
