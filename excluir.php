@@ -22,34 +22,34 @@
         <div class="row">
             <div class="col">
                 <label for="link">Link: </label>
-                <input type="url" name="link" id="link" value="<?=$dados['link'];?>">
+                <input type="url" name="link" id="link" value="<?=$dados['link'];?>" readonly>
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <label for="desc">Descrição: </label>
-                <input type="text" name="desc" id="desc" value="<?=$dados['descricaoURL'];?>">
+                <input type="text" name="desc" id="desc" value="<?=$dados['descricaoURL'];?>" readonly>
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <label for="categoria">Categoria: </label>
-                <input type="text" name="categoria" id="categoria" value="<?=$dados['categoriaURL'];?>">
+                <input type="text" name="categoria" id="categoria" value="<?=$dados['categoriaURL'];?>" readonly>
             </div>
         </div>
 
         <div class="row">
             <div class="col">
-                <label for="foto">Foto:</label>
-                <input type="file" name="foto" id="foto">
+                <label for="foto">Icone do Site:</label>
             </div>
         </div>
+            <img src="./upload/<?=$dados['foto'];?>" alt="Imagem do Link" class="excluirimg">
 
-        <div>
-            <input type="reset" value="Voltar" href="./visualizar.php">
-            <input type="submit" value="Excluir" >
+        <div class="botoes">
+            <a href="./visualizar.php" class="btnvoltar">Voltar</a>
+            <input type="submit" value="Excluir" class="btnexcluir">
         </div>
         </form>
     </div>

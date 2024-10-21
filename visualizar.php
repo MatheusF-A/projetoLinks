@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -26,21 +25,23 @@
             <div class="card">
                 <div class="card-image">
                     <img src="./upload/<?= $linha['foto'];?> "alt="Imagem do Link">
+                    <?php $_SESSION['foto'] = $linha['foto']; ?>
                 </div>
                 <div class="card-content">
                     <h2><?= $linha['link']?></h2>
                     <p>Categoria: <?= $linha['categoriaURL']?></p>
                     <p><?= $linha['descricaoURL']?></p>
-                    <p>Salvo em: <?php 
-                        $data_original = $linha['dataCadastroURL'];
+                    <p>Salvo em: 
+                        <?php 
+                            $data_original = $linha['dataCadastroURL'];
 
-                        $data = DateTime::createFromFormat('Y-m-d', $data_original);
-                        $data_formatada = $data->format('d/m/Y');
-                        echo $data_formatada;
-                        
-                    ?></p>
+                            $data = DateTime::createFromFormat('Y-m-d', $data_original);
+                            $data_formatada = $data->format('d/m/Y');
+                            echo $data_formatada;
+                        ?>
+                    </p>
                     <div class=></div>
-                    <a href="<?= $linha['link']; ?>" class="btnAcessar">Acessar</a>
+                    <a href="<?= $linha['link']; ?>" class="btnAcessar"  target="_blank">Acessar</a>
                     <a href="./excluir.php?id=<?= $linha['idURL'];?>" class="btnExcluir">Excluir</a>
                     <a href="./atualizar.php?id=<?= $linha['idURL'];?>" class="btnAtualizar">Atualizar</a>
                 </div>

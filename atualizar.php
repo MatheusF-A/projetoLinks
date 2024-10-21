@@ -42,15 +42,24 @@
 
         <div class="row">
             <div class="col">
-                <label for="foto">Foto:</label>
+                <label for="foto">Alterar Foto: </label>
                 <input type="file" name="foto" id="foto">
             </div>
         </div>
 
-        <div>
-            <input type="reset" value="RESET">
-            <input type="submit" value="SALVAR">
+        <div class="row">
+            <div class="col">
+                <label for="foto">Icone Atual do Site:</label>
+            </div>
         </div>
+        
+            <img src="./upload/<?=$dados['foto'];?>" alt="Imagem do Link" class="excluirimg">
+
+        <div class="botoes">
+            <a href="./visualizar.php" class="btnvoltar">Voltar</a>
+            <input type="submit" value="Salvar" class="btnatualizar">
+        </div>
+        </form>
 
         </form>
     </div>
