@@ -89,13 +89,14 @@ input[type="text"], input[type="url"],input[type="file"]
 input[type="submit"], [type="reset"]{
     width:150px;
     height: 100px;
-    background-color: white;
+    background-color: lightgreen;
     border-radius: 5px;
     font-weight: bold;
     transition: 0.25s;
     border: solid 1px;
     font-size: 25px;
     margin-right: 20px;
+
 }
 
 .btnExcluir{
@@ -104,7 +105,8 @@ input[type="submit"], [type="reset"]{
 }
 
 input[type="submit"]:hover{
-    background-color: lightgreen;
+    background-color: darkgreen;
+    color: white;
     cursor: pointer;
 }
 

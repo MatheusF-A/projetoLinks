@@ -42,9 +42,9 @@
             </div>
         </div>
 
-        <div>
-            <input type="reset" value="RESET">
-            <input type="submit" value="SALVAR">
+        <div class="botoes">
+            <a href="./visualizar.php" class="btnvoltar">Voltar</a>
+            <input type="submit" value="Salvar" class="btnatualizar">
         </div>
         </form>
     </div>
