@@ -29,17 +29,6 @@ body {
     padding: 20px 0px 0px 0px;
 }
 
-.exc {
-    width:150px;
-    height: 100px;
-    background-color: rgba(209, 41, 41, 0.593);
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.25s;
-    border: solid 1px;
-    font-size: 25px;
-}
-
 /*Menu*/
 
 .menu {
